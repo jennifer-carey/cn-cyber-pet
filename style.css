@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   line-height: 1.5;
+   font-size: 1.125rem;
+   height: 100vh;
+}
+
+img {
+   display: block;
+   width: 100%;
+   border-radius: 100%;
+}
+
+h1 {
+   font-family: 'Bangers', cursive;
+   letter-spacing: 0.2rem;
+   text-align: center;
+   font-size: 3rem;
+   padding: 0.5em 0 0.2em 0;
+}
+
+.intro-text {
+   text-align: center;
+   padding-bottom: 0.2em;
+}
+
+footer {
+   text-align: center;
+   font-size: 1rem;
+   padding: 0.5em 0;
+}
+
+.wrapper {
+   width: 95%;
+   margin: 0 auto;
+}
+
+.image-group {
+   margin: 1em 0;
+   padding: 2em 0;
+}
+
+.image {
+   width: 90%;
+   margin: 0 auto;
+   padding-bottom: 2em;
+}
+
+
+@media (min-width: 900px) {
+   .wrapper {
+      width: 80%;
+   }
+
+   .image-group {
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   .image {
+      width: 30%;
+      cursor: pointer;
+   }
+}
