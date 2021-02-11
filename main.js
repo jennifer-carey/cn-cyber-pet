@@ -58,6 +58,6 @@ class Rabbit extends Animal {
    }
 }
 
-let dog1 = new Dog("Rex", 10);
-console.log(`My pet is called ${dog1.name}. Their happiness is: ${dog1.happinessUnit}.`);
-console.log(dog1.play());
+// let dog1 = new Dog("Rex", 10);
+// console.log(`My pet is called ${dog1.name}. Their happiness is: ${dog1.happinessUnit}.`);
+// console.log(dog1.play());
