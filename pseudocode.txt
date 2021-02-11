@@ -1,0 +1,49 @@
+// CYBER PET
+// This program will require the user to select a pet from three options. Once the pet is selected, the user can select a name for it. When the pet is created, the user is taken to a different interface where they can interact with the pet by clicking actions that will increase or decrease the happiness of the pet as well as presenting a message to the user in the DOM.
+
+// initial page setup
+page heading "Cyber Pets"
+text asking user to select a pet
+images of 3 options - dog, cat, rabbit
+<user clicks on the image of preferred animal>
+
+prompt request for input
+	"Aw, how cute! Enter a name for your pet."
+	set a default option if the user doesn't enter a name
+<user enters a name>
+
+//new interface appears
+page heading "Cyber Pets"
+img of pet
+key properties
+	name (from user input)
+	happiness <number> + unit (default: DOG - 10 tail wags per minute / RABBIT - 3 hops per minute / CAT - 0 purrs per minute)
+key actions (buttons for user to click)
+	feed
+	play
+	wash
+	stroke
+<user clicks an action>
+
+when user clicks an action, two things will change
+	1. the happiness rating will increase or decrease 
+	2. print a sentence to the DOM stating the outcome of action
+if "feed"
+	print: "<pet name> loves feeding time!"
+	happiness: increases by 20
+if "play"
+	print: "<pet name> loves playing!"
+	happiness: increases by 15
+if "wash"
+	print: "Uh-oh! <pet name> hates bath time."
+	happiness: decreases by 20
+if "stroke"
+	print: "<pet name> loves cuddles."
+	happiness: increases by 5
+
+
+
+
+
+
+
