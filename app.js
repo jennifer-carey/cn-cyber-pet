@@ -19,6 +19,7 @@ dogImg.addEventListener("click", () => {
    welcomeScreen.style.display = "none";
    petInterface.style.display = "block";
    let petName = prompt("Aw, great choice! Now enter a name for your pet.", "Your pet ");
-   let newDog = new Dog(`${petName}`);
-
+   let newDog = new Dog(`${petName}`, 10);
+   insertName.textContent = `${petName}`;
+   happinessLevel.textContent = `${newDog.happinessUnit}`;
 });
