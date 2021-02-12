@@ -68,6 +68,10 @@ h1 {
    font-weight: bold;
 }
 
+.pet-emotion {
+   display: none;
+}
+
 .buttons {
    display: flex;
    justify-content: center;
