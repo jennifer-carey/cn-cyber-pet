@@ -14,9 +14,9 @@ body {
 }
 
 img {
-   display: block;
    width: 100%;
    border-radius: 100%;
+   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 h1 {
@@ -47,24 +47,16 @@ h1 {
    padding-bottom: 2em;
 }
 
-.animal-img, .pet-img {
-   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-}
-
 .animal-img {
    transition: transform 500ms;
 }
 
-.dog-img:hover {
+.dog-img:hover, .rabbit-img:hover {
    transform: rotate(20deg) scale(1.1);
 }
 
 .cat-img:hover {
    transform: rotate(-20deg) scale(1.1);
-}
-
-.rabbit-img:hover {
-   transform: rotate(20deg) scale(1.1);
 }
 
 .pet-stats {
@@ -112,13 +104,32 @@ h1 {
 
    .image {
       width: 30%;
+      margin: 0 auto;
       padding-bottom: 0;
       cursor: pointer;
+   }
+
+   .main-image {
+      width: 25%;
+      margin: 0 4em;
+   }
+
+   .pet-info {
+      display: flex;
+      justify-content: center;
+   }
+
+   .pet-stats {
+      width: 40%;
+      font-size: 1.6rem;
+      text-align: left;
+      align-self: center;
    }
 
    .buttons {
       display: flex;
       justify-content: space-evenly;
+      padding: 2em 0;
    }
 
    .action-button {
