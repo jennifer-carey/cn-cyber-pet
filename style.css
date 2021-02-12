@@ -32,7 +32,7 @@ h1 {
    margin: 0 auto;
 }
 
-p {
+.intro-text {
    text-align: center;
    padding-bottom: 0.5em;
 }
@@ -47,9 +47,12 @@ p {
    padding-bottom: 2em;
 }
 
+.animal-img, .pet-img {
+   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
 .animal-img {
    transition: transform 500ms;
-   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .dog-img:hover {
@@ -64,6 +67,9 @@ p {
    transform: rotate(20deg) scale(1.1);
 }
 
+.pet-stats-style {
+   font-weight: bold;
+}
 
 @media (min-width: 900px) {
    .wrapper {
