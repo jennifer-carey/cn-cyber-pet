@@ -11,18 +11,18 @@ class Animal {
       this._happiness += 20;
    }
    play() {
-      this.happiness += 15;
+      this._happiness += 15;
    }
    wash() {
-      this.happiness -= 15;
+      this._happiness -= 15;
    }
    stroke() {
-      this.happiness += 5;
+      this._happiness += 5;
    }
 }
 
 class Dog extends Animal {
-   constructor(name, happiness) {
+   constructor(name) {
       super(name)
       this._happiness = 10;
    }
@@ -32,7 +32,7 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
-   constructor(name, happiness) {
+   constructor(name) {
       super(name)
       this._happiness = 0;
    }
@@ -42,7 +42,7 @@ class Cat extends Animal {
 }
 
 class Rabbit extends Animal {
-   constructor(name, happiness) {
+   constructor(name) {
       super(name)
       this._happiness = 3;
    }
