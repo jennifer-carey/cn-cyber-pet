@@ -21,5 +21,5 @@ dogImg.addEventListener("click", () => {
    let petName = prompt("Aw, great choice! Now enter a name for your pet.", "Your pet ");
    let newDog = new Dog(`${petName}`, 10);
    insertName.textContent = newDog.name;
-   happinessLevel.textContent = `${newDog.happinessUnit}`;
+   happinessLevel.textContent = newDog.happiness;
 });
