@@ -34,7 +34,7 @@ class Dog extends Animal {
 class Cat extends Animal {
    constructor(name, happiness) {
       super(name)
-      this._happiness = 1;
+      this._happiness = 0;
    }
    get happiness() {
       return `${this._happiness} purrs per minute`;
