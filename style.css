@@ -34,7 +34,7 @@ h1 {
 
 footer {
    text-align: center;
-   font-size: 1rem;
+   font-size: 0.8rem;
    padding: 0.5em 0;
 }
 
@@ -44,7 +44,6 @@ footer {
 }
 
 .image-group {
-   margin: 1em 0;
    padding: 2em 0;
 }
 
@@ -52,6 +51,23 @@ footer {
    width: 90%;
    margin: 0 auto;
    padding-bottom: 2em;
+}
+
+.animal-img {
+   transition: transform 500ms;
+   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.dog-img:hover {
+   transform: rotate(20deg) scale(1.1);
+}
+
+.cat-img:hover {
+   transform: rotate(-20deg) scale(1.1);
+}
+
+.rabbit-img:hover {
+   transform: rotate(20deg) scale(1.1);
 }
 
 
@@ -67,6 +83,7 @@ footer {
 
    .image {
       width: 30%;
+      padding-bottom: 0;
       cursor: pointer;
    }
 }
