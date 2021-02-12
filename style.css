@@ -24,17 +24,17 @@ h1 {
    letter-spacing: 0.2rem;
    text-align: center;
    font-size: 3rem;
-   padding: 0.5em 0 0.2em 0;
-}
-
-.intro-text {
-   text-align: center;
-   padding-bottom: 0.2em;
+   padding: 0.6em 0 0.2em 0;
 }
 
 .wrapper {
-   width: 95%;
+   width: 90%;
    margin: 0 auto;
+}
+
+p {
+   text-align: center;
+   padding-bottom: 0.5em;
 }
 
 .image-group {
@@ -42,7 +42,7 @@ h1 {
 }
 
 .image {
-   width: 90%;
+   width: 85%;
    margin: 0 auto;
    padding-bottom: 2em;
 }
