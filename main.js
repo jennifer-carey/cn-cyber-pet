@@ -7,7 +7,6 @@ class Animal {
    get name() {
       return this._name.charAt(0).toUpperCase() + this._name.slice(1);
    }
-
    feed() {
       //print to DOM
       console.log(`${this.name} loves feeding time!`);
@@ -36,28 +35,31 @@ class Animal {
 
 class Dog extends Animal {
    constructor(name, happiness) {
-      super(name, happiness)
+      super(name)
+      this._happiness = 10;
    }
-   get happinessUnit() {
-      return `${this.happiness} tail wags per minute`;
+   get happiness() {
+      return `${this._happiness} tail wags per minute`;
    }
 }
 
 class Cat extends Animal {
    constructor(name, happiness) {
-      super(name, happiness)
+      super(name)
+      this._happiness = 0;
    }
-   get happinessUnit() {
-      return `${this.happiness} purrs per minute`;
+   get happiness() {
+      return `${this._happiness} purrs per minute`;
    }
 }
 
 class Rabbit extends Animal {
    constructor(name, happiness) {
-      super(name,happiness)
+      super(name)
+      this._happiness = 3;
    }
-   get happinessUnit() {
-      return `${this.happiness} hops per minute`
+   get happiness() {
+      return `${this._happiness} hops per minute`
    }
 }
 
