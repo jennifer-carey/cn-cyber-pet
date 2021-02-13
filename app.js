@@ -16,13 +16,24 @@ const washBtn = document.querySelector("#wash-button");
 const strokeBtn = document.querySelector("#stroke-button");
 
 let pet;
+let petName;
 
 petInterface.style.display = "none";
+
+// function that asks user for name of pet
+const getName = () => {
+   petName = prompt("Aw, great choice! Now enter a name for your pet.");
+   while (petName.length === 0) {
+      alert("Please enter a name for your pet.");
+      petName = prompt("Your pet name:");
+   }
+};
 
 dogImg.addEventListener("click", () => {
    welcomeScreen.style.display = "none";
    petInterface.style.display = "block";
-   let petName = prompt("Aw, great choice! Now enter a name for your pet.", "Your pet ");
+   // let petName = prompt("Aw, great choice! Now enter a name for your pet.", "Your pet ");
+   getName();
    petImg.src = "images/animal-dog.jpg";
    pet = new Dog(petName);
    insertName.textContent = pet.name;
