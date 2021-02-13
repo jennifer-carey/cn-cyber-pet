@@ -9,6 +9,7 @@ const petImg = document.querySelector("#pet-img")
 const insertName = document.querySelector("#insert-name");
 const happinessLevel = document.querySelector("#happiness-level");
 const petEmotion = document.querySelector("#pet-emotion");
+const startAgain = document.querySelector("#start-again");
 // action buttons
 const feedBtn = document.querySelector("#feed-button");
 const playBtn = document.querySelector("#play-button");
@@ -87,4 +88,8 @@ strokeBtn.addEventListener("click", () => {
    happinessLevel.textContent = pet.happiness;
 })
 
-/// create start again option
+// start again option
+startAgain.addEventListener("click", () => {
+   petInterface.style.display = "none";
+   welcomeScreen.style.display = "block";
+})

@@ -97,6 +97,16 @@ h1 {
    border-radius: 50px;
 }
 
+.start-again {
+   text-align: center;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.start-again:hover {
+   font-weight: bold;
+}
+
 @media (min-width: 900px) {
    .wrapper {
       width: 80%;
