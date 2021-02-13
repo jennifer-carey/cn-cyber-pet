@@ -14,7 +14,7 @@ const feedBtn = document.querySelector("#feed-button");
 const playBtn = document.querySelector("#play-button");
 const washBtn = document.querySelector("#wash-button");
 const strokeBtn = document.querySelector("#stroke-button");
-
+// variables that will be updated during the programme
 let pet;
 let petName;
 
@@ -32,41 +32,31 @@ const getName = () => {
 dogImg.addEventListener("click", () => {
    welcomeScreen.style.display = "none";
    petInterface.style.display = "block";
-   // let petName = prompt("Aw, great choice! Now enter a name for your pet.", "Your pet ");
    getName();
    petImg.src = "images/animal-dog.jpg";
    pet = new Dog(petName);
    insertName.textContent = pet.name;
    happinessLevel.textContent = pet.happiness;
-   // setInterval(() => {
-   //    console.log("game loop");
-   // }, 3000);
 });
 
 catImg.addEventListener("click", () => {
    welcomeScreen.style.display = "none";
    petInterface.style.display = "block";
-   let petName = prompt("Aw, great choice! Now enter a name for your pet.", "Your pet ");
+   getName();
    petImg.src = "images/animal-cat.jpg";
    pet = new Cat(petName);
    insertName.textContent = pet.name;
    happinessLevel.textContent = pet.happiness;
-   // setInterval(() => {
-   //    console.log("game loop");
-   // }, 3000);
 });
 
 rabbitImg.addEventListener("click", () => {
    welcomeScreen.style.display = "none";
    petInterface.style.display = "block";
-   let petName = prompt("Aw, great choice! Now enter a name for your pet.", "Your pet ");
+   getName();
    petImg.src = "images/animal-rabbit.jpg";
    pet = new Rabbit(petName);
    insertName.textContent = pet.name;
    happinessLevel.textContent = pet.happiness;
-   // setInterval(() => {
-   //    console.log("game loop");
-   // }, 3000);
 });
 
 feedBtn.addEventListener("click", () => {
