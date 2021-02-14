@@ -12,9 +12,9 @@ const petEmotion = document.querySelector("#pet-emotion");
 const startAgain = document.querySelector("#start-again");
 // action buttons
 const feedBtn = document.querySelector("#feed-button");
-const playBtn = document.querySelector("#play-button");
 const washBtn = document.querySelector("#wash-button");
 const strokeBtn = document.querySelector("#stroke-button");
+const playBtn = document.querySelector("#play-button");
 // variables that will be updated during the programme
 let pet;
 let petName;
@@ -82,4 +82,5 @@ startAgain.addEventListener("click", () => {
    petInterface.style.display = "none";
    welcomeScreen.style.display = "block";
    petEmotion.textContent = ``;
+   happinessLevel.value = 20;
 })

@@ -11,12 +11,8 @@ class Animal {
       happinessLevel.value += 20;
       petEmotion.textContent = `${pet.name} loves food!`;
    }
-   // play() {
-   //    happinessLevel.value += 15;
-   //    petEmotion.textContent = `${pet.name} loves playing!`;
-   // }
    wash() {
-      happinessLevel.value -= 25;
+      happinessLevel.value = 0;
       petEmotion.textContent = `Uh-oh! ${pet.name} hates bath time.`;
    }
    stroke() {
@@ -29,7 +25,7 @@ class Dog extends Animal {
    constructor(name) {
       super(name)
    }
-   walk() {
+   play() {
       happinessLevel.value += 30;
       petEmotion.textContent = `Yes! ${pet.name} loves walkies!`;
    }
