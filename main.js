@@ -3,17 +3,11 @@
 class Animal {
    constructor(name) {
       this._name = name;
-      // this._happiness = 0;
    }
    get name() {
       return this._name.charAt(0).toUpperCase() + this._name.slice(1);
    }
-   // get happiness() {
-   //    return this._happiness;
-   // }
    feed() {
-      // this._happiness += 20;
-      // happinessLevel.textContent = pet.happiness;
       happinessLevel.value += 20;
       petEmotion.textContent = `${pet.name} loves food!`;
    }

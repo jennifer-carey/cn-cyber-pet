@@ -62,9 +62,9 @@ feedBtn.addEventListener("click", () => {
    pet.feed();
 })
 
-playBtn.addEventListener("click", () => {
+strokeBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
-   pet.play();
+   pet.stroke();
 })
 
 washBtn.addEventListener("click", () => {
@@ -72,12 +72,10 @@ washBtn.addEventListener("click", () => {
    pet.wash();
 })
 
-strokeBtn.addEventListener("click", () => {
+playBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
-   pet.stroke();
+   pet.play();
 })
-
-
 
 // start again option
 startAgain.addEventListener("click", () => {
