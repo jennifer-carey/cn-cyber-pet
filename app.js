@@ -1,4 +1,4 @@
-// elements the user will interact with
+// images the user will interact with
 const dogImg = document.querySelector("#dog-img");
 const catImg = document.querySelector("#cat-img");
 const rabbitImg = document.querySelector("#rabbit-img");
@@ -37,7 +37,6 @@ dogImg.addEventListener("click", () => {
    petImg.src = "images/animal-dog.jpg";
    pet = new Dog(petName);
    insertName.textContent = pet.name;
-   happinessLevel.textContent = pet.happiness;
 });
 
 catImg.addEventListener("click", () => {
@@ -47,7 +46,6 @@ catImg.addEventListener("click", () => {
    petImg.src = "images/animal-cat.jpg";
    pet = new Cat(petName);
    insertName.textContent = pet.name;
-   happinessLevel.textContent = pet.happiness;
 });
 
 rabbitImg.addEventListener("click", () => {
@@ -57,7 +55,6 @@ rabbitImg.addEventListener("click", () => {
    petImg.src = "images/animal-rabbit.jpg";
    pet = new Rabbit(petName);
    insertName.textContent = pet.name;
-   happinessLevel.textContent = pet.happiness;
 });
 
 feedBtn.addEventListener("click", () => {
@@ -79,6 +76,8 @@ strokeBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
    pet.stroke();
 })
+
+
 
 // start again option
 startAgain.addEventListener("click", () => {
