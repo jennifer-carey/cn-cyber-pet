@@ -69,10 +69,9 @@ h1 {
 }
 
 progress[value] {
-   display: block;
+   display: inline-block;
    -webkit-appearance: none;
    appearance: none;
-   margin: 0.2em 0;
 }
 
 progress[value]::-webkit-progress-bar {
@@ -160,6 +159,11 @@ progress[value]::-webkit-progress-value {
       font-size: 1.6rem;
       text-align: left;
       align-self: center;
+   }
+
+   progress[value] {
+      display: block;
+      margin: 0.2em 0;
    }
 
    .buttons {
