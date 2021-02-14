@@ -26,28 +26,19 @@ class Animal {
 }
 
 class Dog extends Animal {
-   constructor(name, happiness) {
-      super(name, happiness)
-   }
-   get happiness() {
-      return `${this._happiness} tail wags per minute`;
+   constructor(name) {
+      super(name)
    }
 }
 
 class Cat extends Animal {
-   constructor(name, happiness) {
-      super(name, happiness)
-   }
-   get happiness() {
-      return `${this._happiness} purrs per minute`;
+   constructor(name) {
+      super(name)
    }
 }
 
 class Rabbit extends Animal {
-   constructor(name, happiness) {
-      super(name, happiness)
-   }
-   get happiness() {
-      return `${this._happiness} hops per minute`;
+   constructor(name) {
+      super(name)
    }
 }
