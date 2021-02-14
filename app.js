@@ -62,34 +62,27 @@ rabbitImg.addEventListener("click", () => {
 
 feedBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
-   petEmotion.textContent = `${pet.name} loves food!`;
    pet.feed();
-   happinessLevel.textContent = pet.happiness;
 })
 
 playBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
-   petEmotion.textContent = `${pet.name} loves playing!`;
    pet.play();
-   happinessLevel.textContent = pet.happiness;
 })
 
 washBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
-   petEmotion.textContent = `Uh-oh! ${pet.name} hates bath time.`;
    pet.wash();
-   happinessLevel.textContent = pet.happiness;
 })
 
 strokeBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
-   petEmotion.textContent = `${pet.name} loves cuddles!`;
    pet.stroke();
-   happinessLevel.textContent = pet.happiness;
 })
 
 // start again option
 startAgain.addEventListener("click", () => {
    petInterface.style.display = "none";
    welcomeScreen.style.display = "block";
+   petEmotion.textContent = ``;
 })

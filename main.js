@@ -13,15 +13,23 @@ class Animal {
    }
    feed() {
       this._happiness += 20;
+      happinessLevel.textContent = pet.happiness;
+      petEmotion.textContent = `${pet.name} loves food!`;
    }
    play() {
       this._happiness += 15;
+      happinessLevel.textContent = pet.happiness;
+      petEmotion.textContent = `${pet.name} loves playing!`;
    }
    wash() {
       this._happiness -= 15;
+      happinessLevel.textContent = pet.happiness;
+      petEmotion.textContent = `Uh-oh! ${pet.name} hates bath time.`;
    }
    stroke() {
       this._happiness += 5;
+      happinessLevel.textContent = pet.happiness;
+      petEmotion.textContent = `${pet.name} loves cuddles!`;
    }
 }
 
