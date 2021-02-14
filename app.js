@@ -5,7 +5,7 @@ const rabbitImg = document.querySelector("#rabbit-img");
 // elements of interface
 const welcomeScreen = document.querySelector("#welcome-screen");
 const petInterface = document.querySelector("#pet-interface");
-const petImg = document.querySelector("#pet-img")
+const petImg = document.querySelector("#pet-img");
 const insertName = document.querySelector("#insert-name");
 const happinessLevel = document.querySelector("#happiness-level");
 const petEmotion = document.querySelector("#pet-emotion");
@@ -60,22 +60,22 @@ rabbitImg.addEventListener("click", () => {
 feedBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
    pet.feed();
-})
+});
 
 strokeBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
    pet.stroke();
-})
+});
 
 washBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
    pet.wash();
-})
+});
 
 playBtn.addEventListener("click", () => {
    petEmotion.style.display = "block";
    pet.play();
-})
+});
 
 // start again option
 startAgain.addEventListener("click", () => {
@@ -83,4 +83,4 @@ startAgain.addEventListener("click", () => {
    welcomeScreen.style.display = "block";
    petEmotion.textContent = ``;
    happinessLevel.value = 20;
-})
+});
