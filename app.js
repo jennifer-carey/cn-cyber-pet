@@ -30,6 +30,14 @@ const getName = () => {
    }
 };
 
+// decreasing the happiness level of progress bar
+const decreaseHappiness = () => {
+   const intervalId = setInterval(reduceBar, 1000);
+   function reduceBar() {
+      happinessLevel.value--;
+   }
+};
+
 dogImg.addEventListener("click", () => {
    welcomeScreen.style.display = "none";
    petInterface.style.display = "block";
@@ -37,6 +45,7 @@ dogImg.addEventListener("click", () => {
    petImg.src = "images/animal-dog.jpg";
    pet = new Dog(petName);
    insertName.textContent = pet.name;
+   decreaseHappiness();
 });
 
 catImg.addEventListener("click", () => {
@@ -46,6 +55,7 @@ catImg.addEventListener("click", () => {
    petImg.src = "images/animal-cat.jpg";
    pet = new Cat(petName);
    insertName.textContent = pet.name;
+   decreaseHappiness();
 });
 
 rabbitImg.addEventListener("click", () => {
@@ -55,6 +65,7 @@ rabbitImg.addEventListener("click", () => {
    petImg.src = "images/animal-rabbit.jpg";
    pet = new Rabbit(petName);
    insertName.textContent = pet.name;
+   decreaseHappiness();
 });
 
 feedBtn.addEventListener("click", () => {
@@ -82,5 +93,5 @@ startAgain.addEventListener("click", () => {
    petInterface.style.display = "none";
    welcomeScreen.style.display = "block";
    petEmotion.textContent = ``;
-   happinessLevel.value = 20;
+   happinessLevel.value = 50;
 });
