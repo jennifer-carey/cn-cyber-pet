@@ -82,13 +82,13 @@ progress[value] {
 
 progress[value]::-webkit-progress-bar {
   background-color: #eee;
-  border-radius: 50px;
+  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: forestgreen;
-  border-radius: 50px;
+  background: forestgreen;
+  border-radius: 5px;
 }
 
 .pet-emotion {
