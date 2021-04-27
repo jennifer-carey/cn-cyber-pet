@@ -18,4 +18,4 @@ This program will require the user to select a pet from three options. Once the 
 
 Jennifer Carey - [@JennifaCarey](https://twitter.com/JennifaCarey)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/jennifer-carey/cn-cyber-pet/)
+Project Link: [https://github.com/jennifer-carey/cn-cyber-pet/](https://github.com/jennifer-carey/cn-cyber-pet/)
