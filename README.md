@@ -6,7 +6,7 @@ This program will require the user to select a pet from three options. Once the 
 
 ### Screenshots
 
-![Cyber Pet Screen Shot](https://github.com/jennifer-carey/cn-cyber-pet/images/screenshots/cyber-pet-mockup.jpg)
+![Cyber Pet Screen Shot](https://github.com/jennifer-carey/cn-cyber-pet/blob/main/images/screenshots/cyber-pet-mockup.jpg)
 
 ### Built With
 
